@@ -3,14 +3,4 @@
 <h4>additional notes:</h4>
 <h5>{{model.additionalnotes}}</h5>
 
-{{#if editQuestionForm}}
-  <div>
-    <h3>question form</h3>
-    <button {{action 'updateQuesionComponent'}}>press this</button>
-  </div>
-{{else}}
-<div>
-  <h3>why doesent this work?</h3>
-  <button {{action 'editQuestionFormButton'}}>edit question</button>
-</div>
-{{/if}}
+{{question-update question=model update="update"}}

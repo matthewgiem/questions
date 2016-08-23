@@ -1,0 +1,28 @@
+{{#if editQuestionForm}}
+  <div>
+    <h3>edit question form</h3>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="question">Question</label>
+          {{input value=question id="question" placeholder=question.question}}
+        </div>
+
+        <div class="form-group">
+          <label for="author">Author</label>
+          {{input value=author id="author" placeholder=question.author}}
+        </div>
+
+        <div class="form-group">
+          <label for="additionalnotes">additional notes</label>
+          {{input value=additionalnotes id="additionalnotes" placeholder=question.additionalnotes}}
+        </div>
+      </form>
+    </div>
+    <button {{action 'updateQuesionComponent' question}}>press this</button>
+  </div>
+{{else}}
+  <div>
+    <button {{action 'editQuestionFormButton'}}>edit question</button>
+  </div>
+{{/if}}
