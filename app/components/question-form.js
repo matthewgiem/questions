@@ -4,7 +4,7 @@ export default Ember.Component.extend({
   actions:  {
     submitFormToComponent() {
       var params = {
-        question: this.get('question'),
+        statement: this.get('statement'),
         author: this.get('author'),
         additionalnotes: this.get('additionalnotes')
       }

@@ -4,8 +4,8 @@
     <div>
       <form>
         <div class="form-group">
-          <label for="question">Question</label>
-          {{input value=question id="question" placeholder=question.question}}
+          <label for="statement">Question</label>
+          {{input value=statement id="statement" placeholder=question.statement}}
         </div>
 
         <div class="form-group">
@@ -19,7 +19,7 @@
         </div>
       </form>
     </div>
-    <button {{action 'updateQuesionComponent' question}}>press this</button>
+    <button {{action 'updateQuestionComponent' question}}>press this</button>
   </div>
 {{else}}
   <div>
