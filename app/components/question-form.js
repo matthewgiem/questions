@@ -7,7 +7,7 @@ export default Ember.Component.extend({
         statement: this.get('statement'),
         author: this.get('author'),
         additionalnotes: this.get('additionalnotes')
-      }
+      };
       this.sendAction('submitQuestionToRoute', params);
     }
   }
