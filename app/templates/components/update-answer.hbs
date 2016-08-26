@@ -1,0 +1,21 @@
+<h2>something should be here</h2>
+{{#if updateAnswerForm}}
+  <h3>update {{answer.text}}</h3>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="text">Answer</label>
+        {{input value=text id="text" placeholder=Answer.text }}
+      </div>
+
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input value=author id="author" placeholder=answer.author }}
+      </div>
+
+      <button {{action 'update' answer}}>Save</button>
+    </form>
+  </div>
+  {{else}}
+    <button {{action 'updateAnswerForm'}}>Change your answer</button>
+  {{/if}}
