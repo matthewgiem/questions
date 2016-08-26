@@ -1,3 +1,4 @@
 <li>
-  {{#link-to 'question' question.id}}{{question.statement}} author: {{question.author}}{{/link-to}}
+  {{answered-question question}}
+  {{#link-to 'question' question.id}}{{questionDetails}}{{/link-to}}
 </li>
