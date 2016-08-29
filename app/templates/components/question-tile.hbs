@@ -1,5 +1,5 @@
 <li>
   {{answered-question question}}
   {{#link-to 'question' question.id}}{{questionDetails}}{{/link-to}}
-  <button {{action 'addQuestionToFavorite' question}}>add to favorite</button>
+  <button class="btn btn-success btn-sm" {{action 'addQuestionToFavorite' question}}>add to favorite</button>
 </li>

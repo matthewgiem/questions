@@ -19,10 +19,10 @@
         </div>
       </form>
     </div>
-    <button {{action 'updateQuestionComponent' question}}>press this</button>
+    <button class="btn btn-success btn-sm" {{action 'updateQuestionComponent' question}}>save</button>
   </div>
 {{else}}
   <div>
-    <button {{action 'editQuestionFormButton'}}>edit question</button>
+    <button class="btn btn-success btn-sm" {{action 'editQuestionFormButton'}}>edit question</button>
   </div>
 {{/if}}
